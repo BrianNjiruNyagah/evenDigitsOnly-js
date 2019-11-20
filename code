@@ -1,0 +1,11 @@
+function evenDigitsOnly(n) {
+    //converting the integer into a string to work on sorting a single value
+    var numbers = n
+    .toString()
+    .split('')
+    .map(currentValue => {return currentValue%2 == 0;});//searches for values even values
+    
+    if(numbers.includes(false)) return false;//checks out if an odd value was found
+    
+    return true;
+}
